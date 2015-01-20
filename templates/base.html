@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Zachary M. Jones">
+    <meta name="description" content="Academic website and weblog of Zachary M. Jones; Ph.D. student in Political Science at Penn State studying applied statistics">
+    <meta name="keywords" content="statistics,programming,political science,data,social science,R,Python">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <link rel=alternate href="{{ url_for('feed') }}" type="application/atom+xml" title="Feed">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+	 inlineMath: [['$','$'], ['\\(','\\)']],
+	 displayMath: [['$$','$$'], ["\\[","\\]"]],
+	 processEscapes: true
+       }, "HTML-CSS": { styles: {".MathJax .mo, .MathJax .mi": {color: "black"}},
+			availableFonts: ["TeX"]
+       }});
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="four columns sidebar">
+      <h1 id="title"><a href="{{ url_for('index') }}">Zachary M. Jones</a></h1>
+      <div id="links">
+      <a href="mailto:zmj@zmjones.com" title="email"><i class="fontawesome-envelope-alt"></i></a>
+      <a href="http://twitter.com/joneszm" title="twitter"><i class="fontawesome-twitter"></i></a>
+      <a href="http://github.com/zmjones/" title="github"><i class="brandico-github-text"></i></a>
+      <a href="http://instagram.com/zmjones2992" title="instagram"><i class="brandico-instagram-filled"></i></a>
+      <a href="{{ url_for('feed') }}" title="rss feed"><i class="fontawesome-rss"></i></a><br>
+      <a href="{{ url_for('page', path='about') }}">about</a><br>
+      <a href="{{ url_for('page', path='cv') }}">curriculum vitae</a><br>
+      <a href="{{ url_for('page', path='posts') }}">posts</a><br>
+      <a href="{{ url_for('page', path='projects') }}">projects</a><br>
+      <a href="{{ url_for('page', path='computing') }}">computing</a><br>
+      <small>
+      licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><i class="zocial-creativecommons"></i></a>
+      </small>
+      </div>
+      </div>
+      <div class="twelve columns">
+	{% block content %}
+	{% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

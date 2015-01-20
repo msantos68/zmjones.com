@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block content %}
+{% if page.meta.type in ["post", "page-title"] %}
+<h2>{{ page.title }}</h2>
+{% endif %}
+{{ page }}
+{% endblock %}

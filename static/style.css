@@ -1,0 +1,185 @@
+@import url("github.css");
+@import url("skeleton.css");
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:600,700,600italic,700italic);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|zocial|brandico);
+[class*="brandico-"]:before {
+  font-family: 'brandico', serif;
+}
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', serif;
+}
+[class*="zocial-"]:before {
+  font-family: 'zocial', serif;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, figure, figcaption, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figure, figcaption, footer, header, hgroup, menu, nav, section { display: block }
+body {
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    color: #000000;
+    background-color: #FAFAFA;
+    line-height: 1.429;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+pre {
+    background-color: #F2F2F2;
+    font-size: 14px;
+    font-family: 'Source Code Pro', mono;
+    padding: 5px;
+    margin: 5px;
+    white-space: pre;
+    overflow: auto;
+}
+
+code {
+    font-size: 14px;
+    font-family: 'Source Code Pro', mono;
+}
+div#home { margin-bottom: 15px; }
+div#links { margin-top: -10px }
+div#links a { color: #000000; text-decoration: none; }
+.container .four.columns .a { text-decoration: none; }
+div.post-summary {
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+iframe.scale-with-grid {
+    width: 640px;
+    height: 360px;
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) { 
+	
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+	iframe.scale-with-grid {
+	    width: 508px;
+	    height: 286px;
+	}
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) { 
+    div#links { margin-bottom: 20px; }
+	iframe.scale-with-grid {
+	    width: 300px;
+	    height: 169px;
+	}
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	iframe.scale-with-grid {
+	    width: 420px;
+	    height: 236px;
+	}
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) { 
+	
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+h1 {
+    font-size: 29px;
+    line-height: 29px;
+    margin-bottom: 12px;
+}
+h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+h1#title {
+    color: #B70000;
+    text-decoration: none;
+}
+p { margin: 0 0 10px 0 }
+p.page-head {
+    font-size: 80%;
+    margin-top: -10px;
+}
+p.project-summary {
+    font-size: 85%;
+    margin-top: -10px;
+}
+em { font-style: italic; font-weight: 400; }
+strong {
+    font-weight: 700;
+    color: #333;
+}
+small { font-size: 80% }
+blockquote, blockquote p { background-color: #F0F0F0; font-size: 95%; }
+blockquote {
+    margin: 5px;
+    padding: 5px 10px 2px 10px;
+}
+hr {
+    border: solid #ddd;
+    border-width: 2px 0 0;
+    clear: both;
+    margin-bottom: 10px;
+    height: 0;
+}
+a {
+    text-decoration: underline;
+    /* color: #003366; */
+    -webkit-transition: color .2s ease-in-out;
+}
+p a, p a:visited { line-height: inherit }
+img {
+    float: center;
+    max-width: 100%;
+    height: auto;
+}
+ul, ol {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+ul { list-style: outside disc }
+ol { list-style: outside decimal }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px }
+ul.square { list-style: square outside }
+ul.circle { list-style: circle outside }
+ul.disc { list-style: disc outside }
+ul ul { list-style-type: circle }
+ul ul, ul ol, ol ol, ol ul {
+    margin: 4px 0 5px 30px;
+    font-size: 90%;
+}
+ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 6px }
+li {
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+ul.large li { line-height: 21px }
+li p { line-height: 21px }
+dt { }
+dd { margin-bottom: 3px }
+
+a.footnote-ref { text-decoration: none; }
+a.footnote-backref { text-decoration: none; }
+
+sup { vertical-align: top; position: relative; top: -0.5em; }

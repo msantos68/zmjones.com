@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: /static/causal-inference/
+Disallow: /static/statistical-learning/
+Disallow: /static/data/

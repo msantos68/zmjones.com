@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zachary M. Jones</title>
+  <link href="{{ url_for('feed', _external=True) }}" rel="self" />
+  <link href="{{ url_for('index', _external=True) }}" />
+  <id>{{ url_for('index', _external=True) }}</id>
+  <updated>{{ updated.strftime('%Y-%m-%dT%H:%M:%SZ') }}</updated>
+  <author>
+    <name>Zachary M. Jones</name>
+    <email>zmj@zmjones.com</email>
+  </author>
+  {% for post in posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ url_for('page', path=post.path, _external=True) }}" />
+    <id>{{ url_for('page', path=post.path, _external=True) }}</id>
+    <updated>{{ post.date.strftime('%Y-%m-%dT%H:%M:%SZ') }}</updated>
+    <author>
+      <name>Zachary M. Jones</name>
+      <email>zmj@zmjones.com</email>
+    </author>
+    <content type="html">
+      {{ post.html }}
+    </content>
+  </entry>
+  {% endfor %}
+</feed>

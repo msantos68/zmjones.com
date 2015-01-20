@@ -1,0 +1,23 @@
+title: Data Contingent Analysis of Historical Data
+type: post
+date: 2014-10-24
+summary: analysis of historical data is contingent on the data (duh!)
+tags: [Statistics]
+
+[Gelman](http://www.stat.columbia.edu/~gelman/) and [Loken](http://www.hhd.psu.edu/hdfs/directory/Bio.aspx?id=EricLoken) have a working paper titled "[The garden of forking paths: Why multiple comparisons can be a problem, even when there is no “fishing expedition” or “$p$-hacking” and the research
+hypothesis was posited ahead of time](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)."
+Their first paragraph sums it up pretty well.
+
+> There is a growing realization that statistically significant claims in scientific publications are routinely mistaken. A dataset can be analyzed in so many different ways (with the choices being not just what statistical test to perform but also decisions on what data to exclude or exclude, what measures to study, what interactions to consider, etc.), that very little information is provided by the statement that a study came up with a $p < .05$ result. The short version is that it’s easy to find a $p < .05$ comparison even if nothing is going on, if you look hard enough—and good scientists are skilled at looking hard enough and subsequently coming up with good stories (plausible even to themselves, as well as to their colleagues and peer reviewers) to back up any statistically-significant comparisons they happen to come up with.
+
+Their main argument is that this can occur even in the much more common situation where researchers are not "$p$-hacking" per say. If the analysis is contigent on the data, rather than pre-registered, this is sufficient to induce the above problem.
+
+I think most analyses of historical data (when the phenomena described by the data occurred prior to the analysis plan) are data contingent. Thus, in some sense, analysis of historical data cannot be confirmatory. Our analyses of historical data are exploratory or descriptive (also discussed in a [working paper](/static/papers/datamining_manuscript.pdf) with [Fridolin Linder](http://polisci.la.psu.edu/people/fjl128)).[^exploratory-descriptive] This seems to me to be true even when historical data is collected for the first time, except in the (seemingly) rare case that there is little *a priori* knowledge about the phenomena on which data is being collected and the analysis plan is determined before collection of the data begins.
+
+[^exploratory-descriptive]: It might be useful to distinguish between these two I am not sure!
+
+This is because we almost always have information prior to analysis about the data that will be subsequently analyzed. In many cases we know a great deal about the specific data. If the data is newly collected (from archives say) then the collector of said data undoubtedly knows a great deal about it. It might be the case that said researcher pre-registered analysis, but probably not. If data collection does not go precisely as planned (due to more/less availability, time constraints, etc.) then the analysis plan is likely to change as well. More commonly, we have prior information about the data because the data has been analyzed many times before (e.g. much of the cross-national research on political violence). In either case our decisions about how to analyze the data are made in light of the data.
+
+The practical consequence of this is that there are lots of relationships that are discussed in the literature that don't seem to buy us much in the way of predictive power. This is because the effects we are studying are variable, there is measurement error, and our data is often dependent, which results in lower (actual) power, than what the tests we are typically using assume. That many statistically significant predictors don't buy much predictive power is in line with one of my [previous papers](/static/papers/eeesr_manuscript.pdf) and [this one](http://jpr.sagepub.com/content/47/4/363) by Ward, Greenhill, and Bakke). Prediction is, as [Chris Fariss](http://cfariss.com) and I discuss in a [recent paper](/static/papers/replication.pdf), the closest thing to "replication" we have in situations where we cannot take another draw from the data generating process.
+
+I don't think this makes the analysis of historical data any less interesting or important. When it is done well it is fascinating (e.g. [Zhukov 2014](http://sites.lsa.umich.edu/zhukov/wp-content/uploads/sites/140/2014/08/jcr_manuscript_final.pdf)), but if we think about things this way some things become more important (prediction, model flexibility) and some less so (NHST).

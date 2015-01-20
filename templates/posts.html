@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ archive.title }}{% endblock %}
+{% block content %}
+{{ archive }}
+<h2>Recent</h2>
+{% for post in posts[0:5] %}
+<a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>, {{ post.date.strftime('%b %Y') }}<br/>
+<div class="post-summary">{{ post.summary }}</div>
+{% endfor %}
+<hr/>
+<h2>Popular</h2>
+{% for post in popular[0:5] %}
+<a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>, {{ post.date.strftime('%b %Y') }}<br/>
+<div class="post-summary">{{ post.summary }}
+</div>
+{% endfor %}
+<hr/>
+<h2>Categories</h2>
+{% for tag in tags %}
+<ul>
+  <li><a href="{{ url_for('archive') }}#{{ tag }}">{{ tag }}</a></li>
+</ul>
+{% endfor %}
+<hr/>
+{% for tag in tags %}
+<h2><a name="{{ tag }}">{{ tag }}</a></h2>
+{% for post in posts %}
+{% if tag in post.tags %}
+<a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>, {{ post.date.strftime('%b %Y') }}<br/>
+<div class="post-summary">{{ post.summary }}</div>
+{% endif %}
+{% endfor %}
+<hr/>
+{% endfor %}
+{% endblock %}
