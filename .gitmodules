@@ -1,0 +1,3 @@
+[submodule "static/git-github-example"]
+	path = static/git-github-example
+	url = https://github.com/zmjones/example.git
