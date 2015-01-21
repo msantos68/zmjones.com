@@ -2,7 +2,7 @@ title: Data Mining as Exploratory Data Analysis
 type: post
 date: 2014-02-02
 summary: statistical learning should often be used in observational studies w/o (as-if) randomization
-tags: [Research, Computing, Statistics]
+tags: [Research, Statistics]
 
 Thanks to [Fridolin Linder](http://polisci.la.psu.edu/people/fjl128) and [Chris Fariss](http://polisci2.ucsd.edu/cfariss) for comments.
 
