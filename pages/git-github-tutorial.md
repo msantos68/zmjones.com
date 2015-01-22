@@ -314,6 +314,7 @@ So we've made two conflicting changes to `data.R`. If we try to merge them we ge
 In this situation Dropbox would create a "conflicted copy." Git does a similar thing. It marks the conflicts in the file for you.
 
 	:::bash
+	> cat data.R
 	print("hello world!")
 	print("a second line")
 	print("branches are useful!")
@@ -325,7 +326,8 @@ In this situation Dropbox would create a "conflicted copy." Git does a similar t
 
 This tells you that `HEAD` in the current branch `master` conflicts with the `fix` branch on the line listed above the line of `=`. So you have to pick the one you want. Open `TextEdit.app` (or Emacs, Vim, or Nano, etc.) and manually fix the problem by deleting the line you don't want along with Git's markers for the conflict. I chose to keep the change from the `fix` branch, so my file looks like this:
 
-	:::r
+	:::bash
+	> cat data.R
 	print("hello world!")
 	print("a second line")
 	print("branches are useful!")
@@ -390,7 +392,6 @@ First, add the remote as it is given to you. In my case:
 	> git remote -v
 	origin	https://github.com/zmjones/example.git (fetch)
 	origin	https://github.com/zmjones/example.git (push)
-
 
 The `v` flag makes the output "verbose." We can now see the address for fetching and pushing, both of which we will now go over. They mean what you would think they mean. Pushing pushes commits you have made to your local branches to corresponding branches in the remote repository. Fetching retrieves commits made to the remote repository.
 
