@@ -322,7 +322,7 @@ In this situation Dropbox would create a "conflicted copy." Git does a similar t
 	change in fix branch
 	>>>>>>> fix
 
-This tells you that `HEAD` in the current branch `master` conflicts with the `fix` branch on the line listed about the line of `=`. So you have to pick the one you want. Open `TextEdit.app` (or Emacs, Vim, or Nano, etc.) and manually fix the problem by deleting the line you don't want along with Git's markers for the conflict. I chose to keep the change from the `fix` branch, so my file looks like this:
+This tells you that `HEAD` in the current branch `master` conflicts with the `fix` branch on the line listed above the line of `=`. So you have to pick the one you want. Open `TextEdit.app` (or Emacs, Vim, or Nano, etc.) and manually fix the problem by deleting the line you don't want along with Git's markers for the conflict. I chose to keep the change from the `fix` branch, so my file looks like this:
 
 	:::r
 	print("hello world!")
