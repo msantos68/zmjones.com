@@ -459,6 +459,96 @@ Now we can see that `master` (local), which tracks `origin/master` (remote) is o
 
 <hr/>
 
+
+### <a name="git_revert">Reverting</a>
+
+If you want to temporarily revert to a particular commit you can do so by referencing that commit's hash. You can think of a hash as a unique identifier for each commit. Let's revert to our second to last commit which as hash `5e057bdca27214b2a948e31fb6656a7f08293d4c`, which I looked up with `git log`.
+
+	:::bash
+	> git checkout 5e057bdca27214b2a948e31fb6656a7f08293d4c
+	Note: checking out '5e057bdca27214b2a948e31fb6656a7f08293d4c'.
+
+	You are in 'detached HEAD' state. You can look around, make experimental
+	changes and commit them, and you can discard any commits you make in this
+	state without impacting any branches by performing another checkout.
+
+	If you want to create a new branch to retain commits you create, you may
+	do so (now or later) by using -b with the checkout command again. Example:
+
+	  git checkout -b new_branch_name
+
+	HEAD is now at 5e057bd... merge github changes
+
+As the message explains, `HEAD` now points to this commit rather than the most recent one. If we want to instead make changes that we might want to keep we can create a new branch.
+
+	:::bash
+	> git checkout -b alt_branch
+	Switched to a new branch 'alt_branch'
+	> echo 'addition from alt_branch' >> data.R
+	> git commit -am 'first change from alt_branch'
+	[alt_branch 2e5f91a] first change from alt_branch
+	 1 file changed, 1 insertion(+)
+	> git checkout master
+	Switched to branch 'master'
+	Your branch is up-to-date with 'origin/master'.
+
+We know there is going to be a merge conflict between `alt_branch` and `master` since HEAD on `alt_master` is before "another line" was added to `data.R` (this was done in the most recent commit in `master`). We can check this by trying to automatically merge them, or we could just manually fix the conflict (which we'll have to do anyway).
+
+	:::bash
+	> git merge alt_branch
+	Auto-merging data.R
+	CONFLICT (content): Merge conflict in data.R
+	Automatic merge failed; fix conflicts and then commit the result.
+	> cat data.R
+	print("hello world!")
+	print("a second line")
+	print("branches are useful!")
+	change in fix branch
+	change to newbranch
+	<<<<<<< HEAD
+	another line
+	=======
+	addition from alt_branch
+	>>>>>>> alt_branch
+
+I edited the file to look like the one below.
+
+	:::bash
+	print("hello world!")
+	print("a second line")
+	print("branches are useful!")
+	change in fix branch
+	change to newbranch
+	another line
+	addition from alt_branch
+
+And then finished committing the merge.
+
+	:::bash
+	> git commit -am 'merged alt_branch'
+	[master ecf4703] merged alt_branch
+
+Now suppose we wanted to throw away these last two changes. We can do this with `git reset`. We need the hash of the commit we want to reset two (there are shortcuts for this I am not covering): `f11a0c1848cf49b0d1f60923eecab269dba6e030`.
+
+	:::bash
+	> git reset --hard f11a0c1848cf49b0d1f60923eecab269dba6e030
+	HEAD is now at f11a0c1 another commit
+	> git log -2
+	commit f11a0c1848cf49b0d1f60923eecab269dba6e030
+	Author: Zachary M. Jones <zmj@zmjones.com>
+	Date:   Wed Jan 21 14:47:21 2015 -0500
+
+		another commit
+
+	commit 5e057bdca27214b2a948e31fb6656a7f08293d4c
+	Merge: 5edfabe ccc6d55
+	Author: Zachary M. Jones <zmj@zmjones.com>
+	Date:   Wed Jan 21 14:04:57 2015 -0500
+
+		merge github changes
+
+Those two commits are gone for good unless you have them backed up another way. Be careful with this!
+
 ## <a name="using_github">Using GitHub</a>
 
 [GitHub's help](https://help.github.com/) is helpful. Check it out. I am just going to describe the basics.
