@@ -596,4 +596,4 @@ Barring merge conflicts here, which you would have to deal with in the fashion o
 
 ## <a name="resources">Resources</a>
 
-My [computing](/computing/#Git) page has a section on Git that lists many of the resources I find helpful. The most important is definitely [Pro Git](http://git-scm.com/book/en/v2).
+My [computing](/computing/#Git) page has a section on Git that lists many of the resources I find helpful. The most important is definitely [Pro Git](http://git-scm.com/book/en/v2). When stumped with a problem you should start by reading the relevant manpage. If you wanted to know how to revert something, for example, it would be good to execute `man git-revert` and read a bit before asking a question on StackOverflow or using your Google-Fu. This will build understanding!
