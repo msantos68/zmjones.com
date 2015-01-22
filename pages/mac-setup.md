@@ -24,7 +24,7 @@ The first thing to do is to install Apple's command line tools. You can do this 
 After the command line tools and XQuartz are installed we can get going with homebrew. To install [homebrew](http://mxcl.github.io/homebrew/) (which requires Ruby of course), open Terminal.app (or whatever terminal emulator you might be using) and enter:
 
 	:::bash
-	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 Now we can go ahead and start installing the base packages we need. Make sure we have the latest homebrew version (which we should), the latest formulas (also should), and that our system is setup correctly. You can check the dependencies of any particular formula with `brew deps <formula name>`. You can see all of the available formulas on [GitHub](https://github.com/mxcl/homebrew/tree/master/Library/Formula).
 
