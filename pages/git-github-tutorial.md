@@ -28,6 +28,7 @@ I am going to start with a few value statements about social science research. Y
     + [Branching and Merging](#git_branch_merge)
 	+ [Rebasing](#git_rebase)
 	+ [Remotes and Remote Branches](#git_remote)
+	+ [Reverting](#git_revert)
  - [Using GitHub](#using_github)
     + [Contributing](#contributing)
  - [Resources](#resources)
