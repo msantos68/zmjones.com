@@ -149,9 +149,7 @@ It is worth noting that there are a whole bunch of minor modes that I am not loa
 
 ### <a name="Python">Python</a> (with [Elpy](https://github.com/jorgenschaefer/elpy))
 
-Onwards to Python. You can install Python with homebrew. I do not do so anymore though! I setup a folder in my home directory where I installed [Anaconda](https://store.continuum.io/cshop/anaconda/) which is unobtrusive and is less of a pain than using `pip`. See [here](http://www.reddit.com/r/Python/comments/1vled5/anaconda_seems_to_have_a_nicely_set_up_library/) for a discussion of why that might be a good idea. Using Anaconda doesn't require much in the way of help, so only directons for install python via homebrew are below.
-
-Install Python (2.7.x) via homebrew (which obviates the need for a few hurdles such as `PYTHONPATH`). Also you can install Python 3 this way (`brew install python3`). Homebrew installs Python modules installed via `pip` to `/usr/local/bin/` so you can delete everything in `/usr/local/share/python` and `/usr/local/share/python3` except for the symlinked `Extras` folder if you please.
+Onwards to Python. You can install Python with homebrew. Install Python (2.7.x) via homebrew (which obviates the need for a few hurdles such as `PYTHONPATH`). Also you can install Python 3 this way (`brew install python3`). Homebrew installs Python modules installed via `pip` to `/usr/local/bin/` so you can delete everything in `/usr/local/share/python` and `/usr/local/share/python3` except for the symlinked `Extras` folder if you please.
 
 	:::bash
 	brew install python
