@@ -103,10 +103,12 @@ Must have packages for social scientists include:
  
 ### <a name="Git">Git</a>
 
-[Git](http://git-scm.com/) is a distributed revision control application. I've [written some](/git/) about why you should be using Git and [GitHub](http://github.com) if you are a quantitative social scientist. GitHub is a hosting service for Git repositories that makes collaboration and a variety of other tasks a lot easier. GitHub gives [free private repositories](https://education.github.com/) to college students/professors for 2 years.
+[Git](http://git-scm.com/) is a distributed revision control application. I've [written some](/git/) about why you should be using Git and [GitHub](http://github.com) if you are a quantitative social scientist. I have also written [a tutorial](/git-github-tutorial/) that is enough to be basically functional from the command line with Git and GitHub. GitHub is a hosting service for Git repositories that makes collaboration and a variety of other tasks a lot easier. GitHub gives [free private repositories](https://education.github.com/) to college students/professors for 2 years.
 
 The Git [documentation](http://git-scm.com/documentation) is awesome, and so is [Pro Git](http://git-scm.com/book). The Git website also has a [blog](http://git-scm.com/blog) and a nice list of external [resources](http://git-scm.com/doc/ext). [Try-Git](http://try.github.io/) is probably the best way to start if you are new to all of this.
 
 GitHub's [help pages](https://help.github.com/) are also good for setting up Git, as well as (shocking I know) getting started with GitHub. They also have a set of [guides](http://guides.github.com/) for a variety of common tasks.
 
 While there aren't many people writing exclusively about Git (other than people working at GitHub and such) there is lots of good community content out there. [/r/git](http://www.reddit.com/r/git) gets a fair bit of it.
+
+This [GitHub cheatsheet](https://github.com/tiimgreen/github-cheat-sheet) is also pretty nice.
