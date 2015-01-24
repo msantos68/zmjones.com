@@ -38,7 +38,6 @@ a <a href="/eeesr/">summary post</a>, an <a href="/static/papers/eeesr_erratum.p
 "[Random Forests for the Social Sciences](/static/papers/rfss_manuscript.pdf)" (working title, with [Fridolin Linder](http://polisci.la.psu.edu/people/fjl128))
 
 <p class="project-summary">
-submitted to <em>Political Analysis</em> <br/>
 tl;dr: random forests can produce interpretable results and are a good general purpose supervised learning method for many regression, classification, and survival problems <br/>
 to be presented at MPSA 2015 <br/>
 the <a href="http://github.com/zmjones/rfss/">code, data, and manuscript</a>
