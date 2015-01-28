@@ -11,10 +11,10 @@ upload:
 	rm -rf build
 
 analytics:
-	cd static/analytics && python parse.py && Rscript analyze.R && zip traffic.zip *
+	aws s3 sync --recursive --quiet s3://zmjones-logs/ ./logs/
+	python static/analytics/parse.py
+	Rscript static/analytics/analyze.R
 
 clean:
 	find . | egrep ".*((\.(aux|log|out|DS_Store|Rhistory)))$$" | xargs rm
 	rm -rf auto
-
-
