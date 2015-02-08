@@ -3,7 +3,7 @@ type: page
 
 I am from the Atlanta area.
 
-I have a cat [Paul](/static/images/paul.jpg) who is fat, happy, and named after [Paul Erdos](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s) (by his previous owner).
+I have a cat [Paul](/static/images/paul.jpg) who is fat, happy, and named after [Paul Erdos](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s) (by his previous owner), and a second named [Bernard](/static/images/bernard.jpg) (after my grandfather) who is larger still (big bones).
 
 My girlfriend [Amber Worthington](http://amberkworthington.com) does cool experiments!
 
