@@ -49,7 +49,7 @@ def page(path):
 @app.route('/posts/')
 def archive():
     return render_template('posts.html', tags=tags, posts=posts,
-                           popular = popular, archive=flatpages.get('archive'))
+                           popular=popular, archive=flatpages.get('archive'))
 
 
 @app.route('/feed.atom')
