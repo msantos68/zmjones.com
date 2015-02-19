@@ -7,8 +7,7 @@ build:
 	mv ./build/static/robots.txt ./build/
 
 upload:
-	aws s3 sync --recursive --delete --size-only $(BUILD_PATH) s3://zmjones.com/
-	rm -rf build
+	aws s3 sync --recursive --delete --exact-timestamps $(BUILD_PATH) s3://zmjones.com/
 
 analytics:
 	aws s3 sync --recursive --quiet s3://zmjones-logs/ ./logs/
