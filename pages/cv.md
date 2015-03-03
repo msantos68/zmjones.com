@@ -10,9 +10,17 @@ Ph.D. in Political Science, *Pennsylvania State University*, expected 2018
 
 M.A. in Political Science, *University of Georgia*, 2013
 
-ICPSR Summer Program, *University of Michigan*, 2011
-
 B.A. in Political Science and Philosophy, *Georgia Southern University*, 2010
+
+### Extra-Departmental
+
+Statistical Computing, *Pennsylvania State University* (graduate), 2014-2015
+
+Linear Algebra ([Axler](http://linear.axler.net/)), Computational Statistics, Mathematical Statistics, Probability (Ross), *Pennsylvania State University* (undergraduate), 2013-2015
+
+Introduction to Higher Mathematics, Calculus I, II, III, *University of Georgia* (undergraduate), 2011-2013
+
+ICPSR Summer Program, *University of Michigan*, 2011
 
 <hr/>
 
