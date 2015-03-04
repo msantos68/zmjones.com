@@ -6,6 +6,7 @@ See my [Google Scholar profile](http://scholar.google.com/citations?user=hdxn_v4
 <hr/>
 
 ## Education
+
 Ph.D. in Political Science, *Pennsylvania State University*, expected 2018
 
 M.A. in Political Science, *University of Georgia*, 2013
