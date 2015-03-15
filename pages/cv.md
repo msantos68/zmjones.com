@@ -1,11 +1,24 @@
 title: Curriculum Vitae
 type: page
 
+## Contents
+
+ - [Education](#education)
+    + [Extra-Departmental](#extra)
+ - [Research](#research)
+    + [Peer-Reviewed Publications](#peer)
+    + [Working Papers](#wp)
+	+ [Editor-Reviewd Publications](#editor)
+	+ [Software](#software)
+ - [Grants, Awards, and Fellowships](#grants_awards_fellowships)
+ - [Teaching](#teaching)
+ - [Service](#service)
+
 See my [Google Scholar profile](http://scholar.google.com/citations?user=hdxn_v4AAAAJ&hl=en) for approximate citation counts.
 
 <hr/>
 
-## Education
+## <a name="education">Education</a>
 
 Ph.D. in Political Science, *Pennsylvania State University*, expected 2018
 
@@ -13,7 +26,7 @@ M.A. in Political Science, *University of Georgia*, 2013
 
 B.A. in Political Science and Philosophy, *Georgia Southern University*, 2010
 
-### Extra-Departmental
+### <a name="extra">Extra-Departmental</a>
 
 Statistical Computing, *Pennsylvania State University* (graduate), 2014-2015
 
@@ -40,8 +53,6 @@ the <a href="/static/papers/eeesr_reviews.pdf">anynomous referee reviews</a>, an
 a <a href="/eeesr/">summary post</a>, an <a href="/static/papers/eeesr_erratum.pdf">erratum</a>, a summary of our <a href="/eeesr-redux/">extension</a>, and a post on <a href="http://politicalviolenceataglance.org/2014/10/27/predicting-government-violence-to-improve-theory-and-practice/">Political Violence at a Glance</a>
 </p>
 
-<hr/>
-
 ### <a name="wp">Working Papers</a>
 
 "[Random Forests for the Social Sciences](/static/papers/rfss_manuscript.pdf)" (working title, with [Fridolin Linder](http://polisci.la.psu.edu/people/fjl128))
@@ -58,8 +69,6 @@ the <a href="http://github.com/zmjones/rfss/">code, data, and manuscript</a>
 tl;dr: regularizing models based on nonparametric estimates of the expected error on new data enhances the non-causal external validity of patterns discovered in observational data
 </p>
 
-<hr/>
-
 ### <a name="editor">Editor-Reviewed Publications</a>
 
 "[Git/GitHub, Transparency, and Legitimacy in Quantitative Research](/static/papers/git_tpm.pdf)"
@@ -70,9 +79,7 @@ tl;dr: revision control (git) can help make research more transparent and reprod
 <a href="http://thepoliticalmethodologist.com/2013/11/18/gitgithub-transparency-and-legitimacy-in-quantitative-research/">official blog post</a>, <a href="/static/papers/git.pdf">preprint</a>, and <a href="/git/">previous version</a> <br/>
 </p>
 
-<hr/>
-
-### Software
+### <a name="software">Software</a>
 
 [edarf](http://github.com/zmjones/edarf)
 
@@ -86,8 +93,6 @@ R package containing functions useful for exploratory data analysis using random
 scrapes and cleans the <a href="http://treaties.un.org">United Nations treaty data</a> using Python and transforms it using R
 </p>
 
-<hr/>
-
 ### Assistance
 
 Christopher J. Fariss, *Pennsylvania State University*, 2014
@@ -100,7 +105,7 @@ Jeffery Berejikian, *University of Georgia*, 2011
 
 <hr/>
 
-## Grants and Awards
+## <a name="grants_awards_fellowships">Grants, Awards, and Fellowships</a>
 
 Jesse M. MacKnight Memorial Scholarship, *Pennsylvania State University*, 2014-2015
 
@@ -110,7 +115,7 @@ Carlos A. Pelanda Paper Award, *University of Georgia*, 2011
 
 <hr/>
 
-## Teaching
+## <a name="teaching">Teaching</a>
 ### Instructor
 
 Modern Warfare, *University of Georgia*, 2012
@@ -118,8 +123,6 @@ Modern Warfare, *University of Georgia*, 2012
 <p class="project-summary">
 <a href="/static/data/modern-warfare.pdf">syllabus</a> and <a href="/static/data/modern-warfare.zip">class material</a>
 </p>
-
-<hr/>
 
 ### Assistance
 
@@ -133,7 +136,7 @@ Introduction to International Affairs, *University of Georgia*, 2011
 
 <hr/>
 
-## Service
+## <a name="service">Service</a>
 ### Reviewer
 
 *Conflict Management and Peace Science* (1), *International Interactions* (1), *Journal of Peace Research* (1)
