@@ -1,14 +1,12 @@
 title: Curriculum Vitae
 type: page
 
-## Contents
-
  - [Education](#education)
     + [Extra-Departmental](#extra)
  - [Research](#research)
     + [Peer-Reviewed Publications](#peer)
     + [Working Papers](#wp)
-	+ [Editor-Reviewd Publications](#editor)
+	+ [Editor-Reviewed Publications](#editor)
 	+ [Software](#software)
  - [Grants, Awards, and Fellowships](#grants_awards_fellowships)
  - [Teaching](#teaching)
