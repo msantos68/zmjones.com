@@ -26,7 +26,7 @@ B.A. in Political Science and Philosophy, *Georgia Southern University*, 2010
 
 ### <a name="extra">Extra-Departmental</a>
 
-Statistical Computing, *Pennsylvania State University* (graduate), 2014-2015
+Statistical Computing, *Pennsylvania State University* (graduate), 2014
 
 Linear Algebra ([Axler](http://linear.axler.net/)), Computational Statistics, Mathematical Statistics, Probability (Ross), *Pennsylvania State University* (undergraduate), 2013-2015
 
