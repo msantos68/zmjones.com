@@ -8,7 +8,8 @@ type: page
     + [Working Papers](#wp)
 	+ [Editor-Reviewed Publications](#editor)
 	+ [Software](#software)
- - [Grants, Awards, and Fellowships](#grants_awards_fellowships)
+ - [Fellowships](#fellowships)
+ - [Awards](#awards)
  - [Teaching](#teaching)
  - [Service](#service)
 
@@ -103,11 +104,15 @@ Jeffery Berejikian, *University of Georgia*, 2011
 
 <hr/>
 
-## <a name="grants_awards_fellowships">Grants, Awards, and Fellowships</a>
+## <a name="fellowships">Fellowships</a>
 
 Jesse M. MacKnight Memorial Scholarship, *Pennsylvania State University*, 2014-2015
 
 Robert W. Graham Endowed Fellowship, *Pennsylvania State University*, 2013
+
+<hr/>
+
+## <a name="awards">Awards</a>
 
 Carlos A. Pelanda Paper Award, *University of Georgia*, 2011
 
