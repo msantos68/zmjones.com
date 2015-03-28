@@ -65,6 +65,7 @@ the <a href="http://github.com/zmjones/rfss/">code, data, and manuscript</a>
 "[Enhancing Validity in Observational Settings When Replication is Not Possible](/static/papers/replication.pdf)" (letter, with [Christopher J. Fariss](http://cfariss.com))
 
 <p class="project-summary">
+<em>under review</em> <br/>
 tl;dr: regularizing models based on nonparametric estimates of the expected error on new data enhances the non-causal external validity of patterns discovered in observational data
 </p>
 
@@ -142,4 +143,4 @@ Introduction to International Affairs, *University of Georgia*, 2011
 ## <a name="service">Service</a>
 ### Reviewer
 
-*Conflict Management and Peace Science* (1), *International Interactions* (1), *Journal of Peace Research* (1)
+*Political Analysis* (1), *Conflict Management and Peace Science* (1), *International Interactions* (1), *Journal of Peace Research* (1)
