@@ -33,7 +33,7 @@ Linear Algebra ([Axler](http://linear.axler.net/)), Computational Statistics, Ma
 
 Introduction to Higher Mathematics, Calculus I, II, III, *University of Georgia* (undergraduate), 2011-2013
 
-ICPSR Summer Program, *University of Michigan*, 2011
+Complex Systems, ICPSR Summer Program, *University of Michigan*, 2011
 
 <hr/>
 
