@@ -7,10 +7,10 @@ build:
 	mv ./build/static/robots.txt ./build/
 
 upload:
-	aws s3 sync --recursive --delete --exact-timestamps $(BUILD_PATH) s3://zmjones.com/
+	aws s3 sync --delete --exact-timestamps $(BUILD_PATH) s3://zmjones.com/
 
 analytics:
-	aws s3 sync --recursive --quiet s3://zmjones-logs/ ./logs/
+	aws s3 sync --quiet s3://zmjones-logs/ ./logs/
 	python static/analytics/parse.py
 	Rscript static/analytics/analyze.R
 
