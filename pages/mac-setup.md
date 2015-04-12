@@ -56,7 +56,7 @@ Homebrew and Git should be good to go now.
 First we need to install [Emacs](http://www.gnu.org/software/emacs/) (the Apple supplied version is 22.1.1, which is *old*). I want the graphical version, but not the pre-built binaries from [emacsformacosx](http://emacsformacosx.com), which, while nice, means you have to download a new binary every time Emacs updates (which, admittedly, is not super often).
 
 	:::bash
-	brew install emacs --cocoa
+	brew install emacs --with-cocoa
 
 Be sure to symlink Emacs to `/Applications` if you want it to be accessible from the dock. The homebrew formula you just executed should spit out a nicely formatted symlink for you to execute, or you can use `brew linkapps`.
 
