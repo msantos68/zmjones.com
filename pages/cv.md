@@ -54,7 +54,7 @@ a <a href="/eeesr/">summary post</a>, an <a href="/static/papers/eeesr_erratum.p
 
 ### <a name="wp">Working Papers</a>
 
-"[Random Forests for the Social Sciences](/static/papers/rfss_manuscript.pdf)" (working title, with [Fridolin Linder](http://polisci.la.psu.edu/people/fjl128))
+"[Exploratory Data Analysis using Random Forests](/static/papers/rfss_manuscript.pdf)" (with [Fridolin Linder](http://polisci.la.psu.edu/people/fjl128))
 
 <p class="project-summary">
 tl;dr: random forests can produce interpretable results and are a good general purpose supervised learning method for many regression, classification, and survival problems <br/>
